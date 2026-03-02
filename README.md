@@ -1,36 +1,36 @@
-\# 🤖 Intelligent Data Analyst Agent (基于 RAG 与微调的垂直领域智能助手)
+Intelligent Data Analyst Agent (基于 RAG 与微调的垂直领域智能助手)
 
 
 
-\## 📖 项目介绍
+项目介绍
 
-针对金融与统计分析场景中，通用大模型存在“知识幻觉”且无法处理私有非结构化数据（PDF）及结构化数据（CSV）的问题，本项目构建了一套集 \*\*文档检索 (RAG)\*\*、\*\*自动化分析 (Agent)\*\*、\*\*专业问答 (Fine-tuning)\*\* 于一体的智能系统。
-
-
-
-\## 🚀 核心功能
-
-\*   \*\*🧠 领域模型微调 (Fine-tuning):\*\* 基于 \*\*Qwen2-1.5B\*\* 模型，使用 \*\*LLaMA-Factory\*\* 进行 \*\*LoRA\*\* 指令微调，显著提升模型对统计学术语的理解能力。
-
-\*   \*\*📚 高级 RAG 检索:\*\* 实现了 "PDF解析 -> Chunking -> 向量召回 (FAISS) -> \*\*重排序 (Rerank)\*\*" 的完整链路，解决长尾语义匹配问题。
-
-\*   \*\*📊 数据分析 Agent:\*\* 基于 \*\*LangChain\*\* 开发代码解释器，支持通过自然语言指令（Text-to-Code）自动清洗数据并生成 Matplotlib 图表。
+针对金融与统计分析场景中，通用大模型存在“知识幻觉”且无法处理私有非结构化数据（PDF）及结构化数据（CSV）的问题，本项目构建了一套集文档检索 (RAG)、自动化分析 (Agent)、专业问答 (Fine-tuning) 于一体的智能系统。
 
 
 
-\## 🛠️ 技术栈
+核心功能
 
-\*   \*\*LLM Framework:\*\* LangChain, LLaMA-Factory
+1.领域模型微调 (Fine-tuning):基于Qwen2-1.5B模型，使用LLaMA-Factory进行LoRA指令微调，显著提升模型对统计学术语的理解能力。
 
-\*   \*\*Model:\*\* Qwen2-1.5B-Instruct, BGE-Small-Zh (Embedding), BGE-Reranker
+2.高级 RAG 检索:实现了 "PDF解析 -> Chunking -> 向量召回 (FAISS) -> 重排序 (Rerank)" 的完整链路，解决长尾语义匹配问题。
 
-\*   \*\*Database:\*\* FAISS (Vector DB)
-
-\*   \*\*Tools:\*\* Pandas, PyPDFLoader, Matplotlib
+3.数据分析 Agent:基于LangChain开发代码解释器，支持通过自然语言指令（Text-to-Code）自动清洗数据并生成 Matplotlib 图表。
 
 
 
-\## 📂 项目结构
+技术栈
+
+LLM Framework: LangChain, LLaMA-Factory
+
+Model: Qwen2-1.5B-Instruct, BGE-Small-Zh (Embedding), BGE-Reranker
+
+Database: FAISS (Vector DB)
+
+Tools: Pandas, PyPDFLoader, Matplotlib
+
+
+
+项目结构
 
 ```text
 
