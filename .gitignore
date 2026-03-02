@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+*.db
+*.pdf
+ml_env/
+llama_env/
+models/
+saves/
+.env
